@@ -9,14 +9,14 @@ article.confirm-article {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #8819f5;
 }
 
 article.confirm-article .recover-wrapper {
   background: #202124;
-  width: 560px;
+  width: 540px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -81,6 +81,7 @@ article.confirm-article button[type='submit'] {
   font-size: 16px;
   background: rgba(149,0,255,1);
   color: #fff;
+  margin: auto;
 }
 
 article.confirm-article button.resend {
@@ -92,7 +93,7 @@ article.confirm-article button.resend {
   font-size: 16px;
   background: #562397;
   color: #fff;
-  margin-top: 24px;
+  margin-top: 12px;
   cursor: pointer;
 }
 article.confirm-article button.resend:hover {
@@ -105,3 +106,18 @@ article.confirm-article .sent-message {
   font-weight: 600;
   color: rgba(0,0,0,0.7)
 }
+
+@media screen and  (max-width: 540px ){
+  article.confirm-article .recover-wrapper {
+    background: #202124;
+    max-width: 90%;
+  }
+  article.confirm-article form {
+    padding: 15px;
+  }
+  
+
+}
+
+
+  
